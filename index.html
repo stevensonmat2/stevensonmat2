@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Matt Stevenson Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="header" id="heading">
+      <div class="background">
+        <h1>MATT STEVENSON</h1>
+        <hr />
+        <h3>software developer</h3>
+        <a href="#home" class="button">learn more</a>
+      </div>
+    </div>
+
+    <div class="navbar" id="navbar">
+      <ul>
+        <li>
+          <a href="#contact" id="nav-item-1" class="nav-item active">CONTACT</a>
+        </li>
+        <li><a href="#work" id="nav-item-2" class="nav-item">WORK</a></li>
+        <li><a href="#home" id="nav-item-3" class="nav-item">ABOUT</a></li>
+      </ul>
+    </div>
+
+    <div class="my-container section" id="home">
+      <h2>Hello!</h2>
+      <hr noshade />
+      <p>
+        My name is Matt Stevenson.
+      </p>
+      <br />
+      <p>Some of my skills include:</p>
+      <br />
+      <p>
+        HTML ◦ CSS ◦ Javascript ◦ Python ◦ Django ◦ PHP ◦ jQuery ◦ AJAX ◦ Git
+      </p>
+      <a href="#work" class="button-white">see some of my work</a>
+    </div>
+
+    <div class="my-container section" id="work">
+      <h2>Projects</h2>
+      <
+    </div>
+
+    <div class="header section" id="contact">
+      <h2>Let's chat</h2>
+      <hr noshade />
+      <br />
+      <br />
+      <div class="contact-row">
+        <form
+          id="contact-form"
+          method="post"
+          action="contact.php"
+          role="form"
+          data-toggle="validator"
+        >
+          <div class="messages"></div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="form_name">Name *</label>
+                  <input
+                    id="form_name"
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    placeholder="Please enter your name"
+                    required="required"
+                    data-error="Name is required."
+                  />
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="form_email">Email *</label>
+                  <input
+                    id="form_email"
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="Please enter your email"
+                    required="required"
+                    data-error="Valid email is required."
+                  />
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="form_message">Message *</label>
+                  <textarea
+                    id="form_message"
+                    name="message"
+                    class="form-control"
+                    placeholder="Your message"
+                    rows="4"
+                    required="required"
+                    data-error="Please, leave us a message."
+                  ></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <input
+                  type="submit"
+                  class="btn btn-send"
+                  value="Send message"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <p><strong>*</strong> These fields are required.</p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
