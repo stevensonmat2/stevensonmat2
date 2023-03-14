@@ -1,7 +1,8 @@
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
+  var screenHeight = $(window).height();
 
-  if (scroll >= 200) {
+  if (scroll >= screenHeight) {
     $(".navbar").addClass("nav-colored");
   } else {
     $(".navbar").removeClass("nav-colored");

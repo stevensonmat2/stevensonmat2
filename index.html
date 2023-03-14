@@ -14,7 +14,6 @@
     <script src="main.js"></script>
   </head>
   <body>
-    
     <div class="navbar" id="navbar">
       <ul>
         <li>
@@ -29,115 +28,105 @@
       </ul>
     </div>
 
-    <div class="page-section" id="heading">
-        <h1>MATT STEVENSON</h1>
-        <hr />
-        <h3>software developer</h3>
-      <button class="button button-orange" onclick="window.location.href='#home'">
-        learn more
+    <div class="page-section section-dark" id="heading">
+      <h1>MATT STEVENSON</h1>
+      <hr />
+      <h3>software developer</h3>
+      <button
+        class="button button-orange"
+        onclick="window.location.href='#home'"
+      >
+        Learn more
       </button>
     </div>
 
-    <div class="page-section" id="home">
+    <div class="page-section section-orange" id="home">
       <h2>Hello!</h2>
-      <hr/>
+      <hr />
       <p>
         My name is Matt Stevenson.
+        <br />
+        <br />
+        I have several years of professional software development experience,
+        with work ranging from functional test development, to query
+        optimization, to implementing API driven microservices.
+        <br />
+        <br />
+        Some of my proficiencies include:
+        <br />
+        <br />
+        Python/Django, C#, C++, Java, Javascript/Typescript, SQL, HTML, CSS,
+        Docker, Postman, Selenium, Git
       </p>
-      <br />
-      <p>Some of my skills include:</p>
-      <br />
-      <p>
-        HTML ◦ CSS ◦ Javascript ◦ Python ◦ Django ◦ PHP ◦ jQuery ◦ AJAX ◦ Git
-      </p>
-      <button class="button button-white" onclick="window.location.href='#work'">
-        see some of my work
+      <button
+        class="button button-white"
+        onclick="window.location.href='#work'"
+      >
+        Check out my work
       </button>
     </div>
 
-    <div class="page-section" id="work">
+    <div class="page-section section-dark" id="work">
       <h2>Projects</h2>
+      <button
+        class="button button-orange"
+        onclick="window.location.href='#contact'"
+      >
+        Get in touch
+      </button>
     </div>
 
-    <div class="page-section" id="contact">
+    <div class="page-section section-orange" id="contact">
       <h2>Let's chat</h2>
       <hr />
       <br />
-      <div class="contact-row">
-        <form
-          id="contact-form"
-          method="post"
-          action="contact.php"
-          role="form"
-          data-toggle="validator"
-        >
-          <div class="messages"></div>
-            <div class="row">
-              <div class="col-md-12">
-                <div class="form-group">
-                  <label for="form_name">Name *</label>
-                  <input
-                    id="form_name"
-                    type="text"
-                    name="name"
-                    class="form-control"
-                    placeholder="Please enter your name"
-                    required="required"
-                    data-error="Name is required."
-                  />
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div>
-                <div class="form-group">
-                  <label for="form_email">Email *</label>
-                  <input
-                    id="form_email"
-                    type="email"
-                    name="email"
-                    class="form-control"
-                    placeholder="Please enter your email"
-                    required="required"
-                    data-error="Valid email is required."
-                  />
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <div class="form-group">
-                  <label for="form_message">Message *</label>
-                  <textarea
-                    id="form_message"
-                    name="message"
-                    class="form-control"
-                    placeholder="Your message"
-                    rows="4"
-                    required="required"
-                    data-error="Please, leave us a message."
-                  ></textarea>
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <input
-                  type="submit"
-                  class="btn btn-send"
-                  value="Send message"
-                />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <p><strong>*</strong> These fields are required.</p>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
+      <form
+        id="contact-form"
+        method="post"
+        action="contact.php"
+        role="form"
+        data-toggle="validator"
+      >
+        <div class="form-group">
+          <label for="form-name">Name *</label>
+          <input
+            id="form-name"
+            type="text"
+            name="name"
+            class="form-control"
+            placeholder="Please enter your name"
+            required="required"
+          />
+        </div>
+        <div class="form-group">
+          <label for="form_email">Email *</label>
+          <input
+            id="form-email"
+            type="email"
+            name="email"
+            class="form-control"
+            placeholder="Please enter your email"
+            required="required"
+          />
+        </div>
+        <div class="form-group">
+          <label for="form_message">Message *</label>
+          <textarea
+            id="form-message"
+            name="message"
+            class="form-control"
+            placeholder="Your message"
+            rows="4"
+            required="required"
+          ></textarea>
+        </div>
+        <div>
+          <input type="submit" class="btn btn-send" value="Send message" />
+        </div>
+        <div>
+          <p><strong>*</strong> These fields are required.</p>
+        </div>
+      </form>
     </div>
   </body>
 </html>
