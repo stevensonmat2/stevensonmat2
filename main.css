@@ -4,17 +4,6 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
-.dash {
-  border: 1px solid black;
-  width: 10%;
-  height: 0px;
-  background-color: black;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .button {
   padding: 15px 32px;
   text-align: center;
@@ -27,9 +16,18 @@ body {
   border: 1px solid #f77c62;
 }
 
+.button:hover {
+  transition: background-color 0.2s ease-in-out;
+}
+
 .button-orange {
-  background-color: rgb(240, 95, 64);
+  background-color: #f05f40;
   color: white;
+}
+
+.button-orange:hover {
+  background-color: white;
+  color: #f05f40;
 }
 
 .button-white {
@@ -37,12 +35,29 @@ body {
   color: black;
 }
 
+.button-white:hover {
+  color: white;
+  background-color: #212529;
+}
+
+.footnote {
+  font-size: smaller;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2vh;
+  margin: auto 2vw;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 hr {
-  width: 10%;
+  width: 100px;
   display: block;
   color: white;
   margin-top: 0.5em;
@@ -55,36 +70,35 @@ hr {
   background-color: white;
 }
 
-.navbar {
+.list-item {
+  width: 110px;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  list-style: none;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 99;
-  overflow: hidden;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-.navbar ul {
-  margin-top: 0px;
-}
-
-.navbar ul li {
-  list-style: none;
-  padding: 10px;
-  float: right;
-}
-.navbar a {
-  float: right;
-  display: block;
+.nav-list a {
   color: #f2f2f2;
-  text-align: center;
   padding: 0px 16px;
   text-decoration: none;
   font-size: 17px;
   font-weight: 500;
 }
 
-.navbar a:hover {
-  color: rgb(240, 95, 64);
+.nav-list a:hover {
+  color: #f05f40;
 }
 
 .nav-colored {
@@ -98,15 +112,15 @@ hr {
 }
 
 .nav-colored a:hover {
-  color: rgb(240, 95, 64);
+  color: #f05f40;
 }
 
 p {
   font-family: serif;
 }
+
 .page-section {
-  padding-left: 20%;
-  padding-right: 20%;
+  padding: 0% 20%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -122,8 +136,25 @@ p {
 
 .section-orange {
   color: white;
-  background-color: rgb(240, 95, 64);
+  background-color: #f05f40;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 420px) {
+  p {
+    font-size: 20px;
+  }
+
+  .page-section {
+    padding: 0px 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .body {
+    padding-top: 10%;
+  }
+
+  .nav-list {
+    justify-content: center;
+  }
 }

@@ -3,8 +3,8 @@ $(window).scroll(function () {
   var screenHeight = $(window).height();
 
   if (scroll >= screenHeight) {
-    $(".navbar").addClass("nav-colored");
+    $(".nav-list").addClass("nav-colored");
   } else {
-    $(".navbar").removeClass("nav-colored");
+    $(".nav-list").removeClass("nav-colored");
   }
 });
