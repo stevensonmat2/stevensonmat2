@@ -13,7 +13,7 @@ body {
   margin: 20px 16px;
   cursor: pointer;
   border-radius: 40px;
-  border: 1px solid #f77c62;
+  border: 1px solid #f32900;
 }
 
 .button:hover {
@@ -21,13 +21,13 @@ body {
 }
 
 .button-orange {
-  background-color: #f05f40;
+  background-color: #e60000;
   color: white;
 }
 
 .button-orange:hover {
   background-color: white;
-  color: #f05f40;
+  color: #e60000;
 }
 
 .button-white {
@@ -48,6 +48,7 @@ body {
 
 .footnote {
   font-size: smaller;
+  color: white;
 }
 
 .form-group {
@@ -79,7 +80,7 @@ hr {
 .image-container {
   width: 100%;
   height: 50%;
-  border: 1px #f2f2f2 solid;
+  /* border: 1px #f2f2f2 solid; */
 }
 
 .list-item {
@@ -110,7 +111,7 @@ hr {
 }
 
 .nav-list a:hover {
-  color: #f05f40;
+  color: #e60000;
 }
 
 .nav-colored {
@@ -124,7 +125,7 @@ hr {
 }
 
 .nav-colored a:hover {
-  color: #f05f40;
+  color: #e60000;
 }
 
 p {
@@ -156,8 +157,7 @@ p {
 }
 
 .project-image {
-  width: 30vh;
-  height: 30vh;
+  max-height: 40vh;
 }
 
 .project-link {
@@ -171,13 +171,7 @@ p {
 
 .section-orange {
   color: white;
-  background-color: #f05f40;
-}
-
-@media screen and (max-width: 420px) {
-  .page-section {
-    padding: 0px 5%;
-  }
+  background-color: #e60000;
 }
 
 @media screen and (max-width: 768px) {
@@ -185,11 +179,24 @@ p {
     padding-top: 10%;
   }
 
+  .nav-list {
+    justify-content: center;
+  }
+
   p {
     font-size: 20px;
   }
 
-  .nav-list {
-    justify-content: center;
+  .project-image {
+    max-height: 35vh;
+  }
+}
+@media screen and (max-width: 420px) {
+  .page-section {
+    padding: 0px 5%;
+  }
+
+  .project-image {
+    max-height: 25vh;
   }
 }

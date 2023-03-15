@@ -4,13 +4,18 @@
     <title>Matt Stevenson Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio site for Matt Stevenson" />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
       rel="stylesheet"
       type="text/css"
     />
     <link rel="stylesheet" href="main.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <ul class="nav-list">
@@ -25,17 +30,17 @@
       </li>
     </ul>
 
-    <div class="page-section section-dark" id="heading">
+    <header class="page-section section-dark" id="heading">
       <h1>MATT STEVENSON</h1>
       <hr />
-      <h3>software developer</h3>
+      <h2>software developer</h2>
       <button
         class="button button-orange"
         onclick="window.location.href='#about'"
       >
         Learn more
       </button>
-    </div>
+    </header>
 
     <div class="page-section section-orange" id="about">
       <h2>Hello!</h2>
@@ -67,16 +72,12 @@
       <h2>Projects</h2>
 
       <div class="project-carousel">
-        <div class="project-item project-link">
+        <div class="project-item">
           <div class="image-container">
             <a href="" class="project-link" id="project-link">
-              <img
-                src="img/orange_cycle.png"
-                class="project-image"
-                id="project-image"
-                alt="orange cycle"
-              />
+              <img src="" class="project-image" id="project-image" alt="" />
             </a>
+            <h4 id="project-title"></h4>
           </div>
         </div>
         <button class="button chevron button-orange" id="left-chevron">
@@ -118,7 +119,7 @@
           />
         </div>
         <div class="form-group">
-          <label for="form_email">Email*</label>
+          <label for="form-email">Email*</label>
           <input
             id="form-email"
             type="email"
@@ -129,7 +130,7 @@
           />
         </div>
         <div class="form-group">
-          <label for="form_message">Message*</label>
+          <label for="form-message">Message*</label>
           <textarea
             id="form-message"
             name="message"
@@ -139,12 +140,12 @@
             required="required"
           ></textarea>
         </div>
-        <p class="footnote"><strong>*</strong> These fields are required.</p>
         <div>
           <input
             type="submit"
             class="button button-white"
             value="Send message"
+            disabled
           />
         </div>
       </form>
