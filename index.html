@@ -11,7 +11,6 @@
     />
     <link rel="stylesheet" href="main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="main.js"></script>
   </head>
   <body>
     <ul class="nav-list">
@@ -19,10 +18,10 @@
         <a href="#contact">CONTACT</a>
       </li>
       <li class="list-item">
-        <a href="#work">WORK</a>
+        <a href="#projects">PROJECTS</a>
       </li>
       <li class="list-item">
-        <a href="#home">ABOUT</a>
+        <a href="#about">ABOUT</a>
       </li>
     </ul>
 
@@ -32,13 +31,13 @@
       <h3>software developer</h3>
       <button
         class="button button-orange"
-        onclick="window.location.href='#home'"
+        onclick="window.location.href='#about'"
       >
         Learn more
       </button>
     </div>
 
-    <div class="page-section section-orange" id="home">
+    <div class="page-section section-orange" id="about">
       <h2>Hello!</h2>
       <hr />
       <p>
@@ -46,7 +45,7 @@
         <br />
         <br />
         I have several years of professional software development experience,
-        with work ranging from functional test development, to query
+        with projects ranging from functional test development, to query
         optimization, to implementing API driven microservices.
         <br />
         <br />
@@ -58,14 +57,36 @@
       </p>
       <button
         class="button button-white"
-        onclick="window.location.href='#work'"
+        onclick="window.location.href='#projects'"
       >
-        Check out my work
+        Check out my projects
       </button>
     </div>
 
-    <div class="page-section section-dark" id="work">
+    <div class="page-section section-dark" id="projects">
       <h2>Projects</h2>
+
+      <div class="project-carousel">
+        <div class="project-item project-link">
+          <div class="image-container">
+            <a href="" class="project-link" id="project-link">
+              <img
+                src="img/orange_cycle.png"
+                class="project-image"
+                id="project-image"
+                alt="orange cycle"
+              />
+            </a>
+          </div>
+        </div>
+        <button class="button chevron button-orange" id="left-chevron">
+          <
+        </button>
+        <button class="button chevron button-orange" id="right-chevron">
+          >
+        </button>
+      </div>
+
       <button
         class="button button-orange"
         onclick="window.location.href='#contact'"
@@ -128,5 +149,6 @@
         </div>
       </form>
     </div>
+    <script src="main.js" defer></script>
   </body>
 </html>

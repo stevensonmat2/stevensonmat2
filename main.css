@@ -40,6 +40,12 @@ body {
   background-color: #212529;
 }
 
+.chevron {
+  font-weight: bold;
+  padding: 10px;
+  margin: 0px 0px;
+}
+
 .footnote {
   font-size: smaller;
 }
@@ -68,6 +74,12 @@ hr {
   border-width: 1px;
   border-color: white;
   background-color: white;
+}
+
+.image-container {
+  width: 100%;
+  height: 50%;
+  border: 1px #f2f2f2 solid;
 }
 
 .list-item {
@@ -129,6 +141,29 @@ p {
   text-align: center;
 }
 
+.projects-carousel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image {
+  width: 30vh;
+  height: 30vh;
+}
+
+.project-link {
+  text-decoration: none;
+}
+
 .section-dark {
   color: white;
   background-color: #212529;
@@ -140,10 +175,6 @@ p {
 }
 
 @media screen and (max-width: 420px) {
-  p {
-    font-size: 20px;
-  }
-
   .page-section {
     padding: 0px 5%;
   }
@@ -152,6 +183,10 @@ p {
 @media screen and (max-width: 768px) {
   .body {
     padding-top: 10%;
+  }
+
+  p {
+    font-size: 20px;
   }
 
   .nav-list {
