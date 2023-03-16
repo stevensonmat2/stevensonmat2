@@ -103,7 +103,7 @@ hr {
 }
 
 .nav-list a {
-  color: #f2f2f2;
+  color: white;
   padding: 0px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -121,7 +121,7 @@ hr {
 }
 
 .nav-colored a {
-  color: #343a40;
+  color: black;
 }
 
 .nav-colored a:hover {
@@ -188,15 +188,18 @@ p {
   }
 
   .project-image {
-    max-height: 35vh;
+    /* max-height: 35vh; */
+    max-width: 70vw;
   }
 }
+
 @media screen and (max-width: 420px) {
   .page-section {
     padding: 0px 5%;
   }
 
   .project-image {
-    max-height: 25vh;
+    /* max-height: 15vh; */
+    max-width: 60vw;
   }
 }
