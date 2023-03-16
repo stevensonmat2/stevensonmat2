@@ -1,18 +1,18 @@
 const projects = [
   {
-    src: "img/game-of-life.png",
+    src: "./img/game-of-life.png",
     alt: "A screenshot of the game of life",
     title: "Game of Life",
     href: "https://github.com/stevensonmat2/game_of_life",
   },
   {
-    src: "img/mobile-phone-inbox.jpg",
+    src: "./img/mobile-phone-inbox.jpg",
     alt: "A hand holding a mobile phone showing an email inbox",
     title: "Mass-mailer Script",
     href: "https://github.com/stevensonmat2/mass_mailer",
   },
   {
-    src: "img/chess.jpg",
+    src: "./img/chess.jpg",
     alt: "A child with glasses moving chess pieces on a chess board",
     title: "Chess-playing AI",
     href: "https://github.com/stevensonmat2/ai_group_project",
