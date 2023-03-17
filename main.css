@@ -85,7 +85,7 @@ hr {
 
 .list-item {
   width: 110px;
-  padding: 10px 0px;
+  padding: 0px 0px;
   display: flex;
   justify-content: center;
 }
@@ -104,18 +104,19 @@ hr {
 
 .nav-list a {
   color: white;
-  padding: 0px 16px;
+  padding: 10px 16px;
   text-decoration: none;
   font-size: 17px;
   font-weight: 500;
 }
 
 .nav-list a:hover {
+  background-color: white;
   color: #e60000;
 }
 
 .nav-colored {
-  background-color: #f7f7f7;
+  background-color: white;
   color: black;
   transition: 500ms;
 }
@@ -164,6 +165,12 @@ p {
   text-decoration: none;
 }
 
+.resume {
+  max-height: 70vh;
+  max-width: 90vw;
+  padding-bottom: 10px;
+}
+
 .section-dark {
   color: white;
   background-color: #212529;
@@ -182,18 +189,23 @@ p {
   .nav-list {
     justify-content: center;
   }
-
   p {
     font-size: 20px;
   }
+  h3 {
+    font-size: large;
+  }
 
   .project-image {
-    /* max-height: 35vh; */
     max-width: 70vw;
   }
 }
 
 @media screen and (max-width: 420px) {
+  .nav-list a {
+    padding: 10px 5px;
+  }
+
   .page-section {
     padding: 0px 5%;
   }
